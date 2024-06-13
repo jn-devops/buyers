@@ -8,11 +8,11 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('buyers_table', function (Blueprint $table) {
+        Schema::create('buyers', function (Blueprint $table) {
             $table->id();
-
-            // add fields
-
+            $table->string('reference_code')->unique();
+            $table->string('rating')->nullable();
+            $table->timestamp('paid_on')->nullable();
             $table->timestamps();
         });
     }
