@@ -2,8 +2,8 @@
 
 namespace Homeful\Buyers\Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Homeful\Buyers\Models\Buyer;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BuyerFactory extends Factory
 {
@@ -14,7 +14,7 @@ class BuyerFactory extends Factory
         return [
             'reference_code' => $this->faker->uuid(),
             'rating' => $this->faker->word(),
-            'paid_on' => $this->faker->date()
+            'paid_on' => $this->faker->date(),
         ];
     }
 }

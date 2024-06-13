@@ -9,13 +9,13 @@ use Illuminate\Support\Carbon;
 /**
  * Class Inventory
  *
- * @property int                  $id
- * @property string               $reference_code
- * @property string               $rating
- * @property Carbon               $paid_on
- * @property bool                 $paid
+ * @property int $id
+ * @property string $reference_code
+ * @property string $rating
+ * @property Carbon $paid_on
+ * @property bool $paid
  *
- * @method   int    getKey()
+ * @method int getKey()
  */
 class Buyer extends Model
 {

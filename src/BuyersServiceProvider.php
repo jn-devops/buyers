@@ -2,9 +2,9 @@
 
 namespace Homeful\Buyers;
 
+use Homeful\Buyers\Commands\BuyersCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Homeful\Buyers\Commands\BuyersCommand;
 
 class BuyersServiceProvider extends PackageServiceProvider
 {
